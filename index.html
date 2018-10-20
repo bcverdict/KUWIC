@@ -1,52 +1,59 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<meta chartset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>KUWIC</title>
-		<link href="main.css" rel="stylesheet" type="text/css">﻿
-		
+		<title> Nick's first web page </title>
 	</head>
+
 	<body>
-		<header>
-			<nav>
-				<h1>KUWIC</h1>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="Contact.html">Contact</a></li>
-					<li><a href="Links.html">Links</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div class="row">
-			<div class="col">col1</div>
-			<div class="col">col2</div>
-			<div class="col">col3</div>
-		</div>
-		<footer>2018 My Site</footer>
-		<h1>big</h1>
-		<h3>not really big</h3>
-	<p class="secondary">
-		this is <strong>bold</strong>
-		this is <em>italic</em><br>
-	</p>
-	<p id="nav">
-		this is <strong>bold</strong>
-		this is <em>italic</em><br>
-	</p>
-	
-		<div></div>
-		<span></span>
-		<ul>
-		<li>item 1</li>
-		<li>item 2</li>
-		</ul>
-		
-		<ol>
-		<li>item 1</li>
-		<li>item 2</li>
-		</ol>
+            <p id = "Bear">
+            These are all bears
+            </p>
+            <img src="https://lumiere-a.akamaihd.net/v1/images/gallery_bears_thumbnail_1a557998.jpeg?region=0,0,450,338" id = "Picture" height = "300">
+			<br></br>
+            <button type="button" onClick=Back() id = "Back">Back</button>
+            <button type="button" onClick=Next() id = "Next">Next</button>
+            <script type ="text/javascript">
+            var num = 0;
+            function Back()
+            {
+            	num--;
+              if(num<0)
+              {
+              	num=4;
+              }
+              GetPic();
+            }
+            function Next()
+            {
+            	num++;
+            	if(num>4)
+              {
+              	num = 0;
+              }
+              GetPic();
+            }
+            function GetPic()
+            { 
+            	switch(num)
+              {
+              	case 0:
+                  document.getElementById("Picture").src="https://c402277.ssl.cf1.rackcdn.com/photos/477/images/story_full_width/shutterstock_83440657.jpg?1345572241";
+                  break;
+                case 1:
+                document.getElementById("Picture").src="https://media.gannett-cdn.com/35547428001/35547428001_5496617938001_5496594922001-vs.jpg";
+                  break;
+                case 2:
+                document.getElementById("Picture").src="https://www.wildrepublic.com/Content/uploads/panda-4-5065.jpg";
+                  break;
+                case 3:
+                document.getElementById("Picture").src="https://media.boingboing.net/wp-content/uploads/2017/06/23GRIZZLY-superJumbo.jpg";
+                	break;
+                case 4:
+                document.getElementById("Picture").src="http://1heurf2kk91pad4b23w0jddl.wpengine.netdna-cdn.com/wp-content/uploads/2016/05/Bear-Grylls.jpeg";
+                	break;
+                 default:
+                 	break;
+              }
+            }
+            </script>
 	</body>
 </html>
