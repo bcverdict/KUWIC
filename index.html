@@ -5,14 +5,35 @@
 
 	<body>
             <p id = "Bear">
-            These are all bears
             </p>
-            <img src="https://lumiere-a.akamaihd.net/v1/images/gallery_bears_thumbnail_1a557998.jpeg?region=0,0,450,338" id = "Picture" height = "300">
-			<br></br>
             <button type="button" onClick=Back() id = "Back">Back</button>
+			<img src="https://ae01.alicdn.com/kf/HTB1OCJmH3aTBuNjSszfq6xgfpXa2.jpg" id = "Picture" height = "300">
             <button type="button" onClick=Next() id = "Next">Next</button>
+		<br>
+            <button type="button" onClick=Back1() id = "Back">Back</button>
+			<img src="https://images.express.com/is/image/expressfashion/35_383_2882_098_01?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon" id = "Picture1" height = "300">
+            <button type="button" onClick=Next1() id = "Next">Next</button>
             <script type ="text/javascript">
             var num = 0;
+			var num1 = 0;
+			function Back1()
+            {
+				num1--;
+				if(num1<0)
+				{
+					num1=4;
+				}
+				GetPic();
+            }
+            function Next1()
+            {
+            	num1++;
+            	if(num1>4)
+				{
+					num1 = 0;
+				}
+				GetPic();
+            }
             function Back()
             {
             	num--;
@@ -33,26 +54,46 @@
             }
             function GetPic()
             { 
-            	switch(num)
-              {
-              	case 0:
-                  document.getElementById("Picture").src="https://c402277.ssl.cf1.rackcdn.com/photos/477/images/story_full_width/shutterstock_83440657.jpg?1345572241";
-                  break;
-                case 1:
-                document.getElementById("Picture").src="https://media.gannett-cdn.com/35547428001/35547428001_5496617938001_5496594922001-vs.jpg";
-                  break;
-                case 2:
-                document.getElementById("Picture").src="https://www.wildrepublic.com/Content/uploads/panda-4-5065.jpg";
-                  break;
-                case 3:
-                document.getElementById("Picture").src="https://media.boingboing.net/wp-content/uploads/2017/06/23GRIZZLY-superJumbo.jpg";
-                	break;
-                case 4:
-                document.getElementById("Picture").src="http://1heurf2kk91pad4b23w0jddl.wpengine.netdna-cdn.com/wp-content/uploads/2016/05/Bear-Grylls.jpeg";
-                	break;
-                 default:
-                 	break;
-              }
+				switch(num)
+				{
+					case 0:
+					  document.getElementById("Picture").src="https://ae01.alicdn.com/kf/HTB1OCJmH3aTBuNjSszfq6xgfpXa2.jpg";
+					  break;
+					case 1:
+					document.getElementById("Picture").src="https://img2.newchic.com/thumb/large/oaupload/newchic/images/11/98/c394231f-f5be-a473-127d-dbb8df3bc368.jpg";
+					  break;
+					case 2:
+					document.getElementById("Picture").src="https://gloimg.twkcdn.com/td/2015/201508/source-img/1440541687783-P-3017805.jpg";
+					  break;
+					case 3:
+					document.getElementById("Picture").src="https://www.dhresource.com/0x0s/f2-albu-g5-M00-0E-91-rBVaJFl-kK6ANhTIAANSBdL7qVM816.jpg/2018-men-dress-shirts-men-039-s-casual-shirt.jpg";
+						break;
+					case 4:
+					document.getElementById("Picture").src="https://img2.newchic.com/thumb/view/oaupload/newchic/images/04/0C/a929076f-1a73-404d-a0f4-54b42af109a6.jpg";
+						break;
+					 default:
+						break;
+				}
+				switch(num1)
+				{
+					case 0:
+					  document.getElementById("Picture1").src="https://images.express.com/is/image/expressfashion/35_383_2882_098_01?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon";
+					  break;
+					case 1:
+					document.getElementById("Picture1").src="https://images-na.ssl-images-amazon.com/images/I/61ZfJpbaQiL._SY445_.jpg";
+					  break;
+					case 2:
+					document.getElementById("Picture1").src="https://ak1.ostkcdn.com//images/products/10657931/Elie-Balleh-Mens-Slim-Fit-Dress-Pants-07678f23-6959-4373-b059-8ab05b54458d.jpg";
+					  break;
+					case 3:
+					document.getElementById("Picture1").src="https://ak1.ostkcdn.com//images/products/9028403/Perry-Ellis-Mens-Slim-Fit-Grey-Plaid-Flat-Front-Dress-Pants-07cef57e-ef73-43b4-a252-76671978cd43.jpg";
+						break;
+					case 4:
+					document.getElementById("Picture1").src="https://images.express.com/is/image/expressfashion/0035_03073320_0826?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon";
+						break;
+					 default:
+						break;
+				}
             }
             </script>
 	</body>
