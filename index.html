@@ -1,19 +1,23 @@
 <html>
 	<head>
-		<title> Nick's first web page </title>
+		<title> Wadrobe! </title>
+		<link href="style.css" rel="stylesheet" type="text/css">﻿
 	</head>
 
 	<body>
             <p id = "Bear">
             </p>
-            <button type="button" onClick=Back() id = "Back">Back</button>
-			<img src="https://ae01.alicdn.com/kf/HTB1OCJmH3aTBuNjSszfq6xgfpXa2.jpg" id = "Picture" height = "300">
-            <button type="button" onClick=Next() id = "Next">Next</button>
+            <p1><button type="button" onClick=Back() id = "Back"></button></p1>
+			<center><img src="https://ae01.alicdn.com/kf/HTB1OCJmH3aTBuNjSszfq6xgfpXa2.jpg" id = "Picture" width = "300" height = "320"></center>
+            <p2><button type="button" onClick=Next() id = "Next"></button></p2>
+
+
 		<br>
-            <button type="button" onClick=Back1() id = "Back">Back</button>
-			<img src="https://images.express.com/is/image/expressfashion/35_383_2882_098_01?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon" id = "Picture1" height = "300">
-            <button type="button" onClick=Next1() id = "Next">Next</button>
+            <p1><button type="button" onClick=Back1() id = "Back"></button></p1>
+			<center><img src="https://images.express.com/is/image/expressfashion/35_383_2882_098_01?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon" id = "Picture1" width = "300" height = "320"></center>
+            <p2><button type="button" onClick=Next1() id = "Next"></button></p2>
             <script type ="text/javascript">
+
             var num = 0;
 			var num1 = 0;
 			function Back1()
@@ -53,7 +57,7 @@
               GetPic();
             }
             function GetPic()
-            { 
+            {
 				switch(num)
 				{
 					case 0:
