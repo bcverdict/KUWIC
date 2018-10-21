@@ -1,23 +1,13 @@
-body button {
-   width: 5px;
-   height: 5px;
-   border-style: solid;
-   border-width: 15px 5px 15px 20px;
-   border-color: transparent transparent transparent #555555;
-   display: inline-block;
-   margin: 0 0 0 0px;
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 30px;
 }
-img {
-   padding:1px;
-   border:1px solid #021a40;
-   background-color:#e7e7e7;
-
-
-}
-p1 {
-   float: left;
-}
-p2 {
-   float: right;
-}
- 
