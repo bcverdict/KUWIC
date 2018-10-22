@@ -8,5 +8,5 @@ suit their style. Also, the web app displays a link to the weather for that part
 combination of clothes. 
 
 ## Things we learned as a team
-Some of the things/skills each member learnt are: team work, time management, html and css basics, github usage,
-bootstrap, research, ..
+Some of the things/skills each member learned are: team work, time management, html and css basics, github usage(and outages),
+bootstrap, and api integration.
